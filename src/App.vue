@@ -1,20 +1,25 @@
 <template>
-  <div class="min-h-screen bg-gray-100">
-    <div class="container mx-auto px-4 py-8">
-      <h1 class="text-4xl font-bold text-center text-blue-600 mb-8">
-        Welcome to Vue.js with Tailwind CSS
-      </h1>
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <p class="text-gray-700 text-lg">
-          This is a sample component using Tailwind CSS classes for styling.
-        </p>
-      </div>
-    </div>
+  <div class="min-h-screen flex flex-col">
+    <SiteHeader />
+    <main class="flex-grow">
+      <HeroSection />
+      <!-- Aquí irán las demás secciones -->
+    </main>
+    <SiteFooter />
   </div>
 </template>
 
 <script>
+import SiteHeader from '@/components/layout/Header.vue'
+import SiteFooter from '@/components/layout/Footer.vue'
+import HeroSection from '@/components/sections/HeroSection.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    SiteHeader,
+    SiteFooter,
+    HeroSection
+  }
 }
 </script>
