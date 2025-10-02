@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center">
-          <img src="@/assets/img/logo_1.png" alt="Oscar Guzman Abogados" class="h-12 md:h-16">
+          <img src="@/assets/img/logo_5.png" alt="Oscar Guzman Abogados" class="h-12 md:h-16">
         </div>
 
         <!-- Mobile menu button -->
